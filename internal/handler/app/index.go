@@ -6,5 +6,5 @@ import (
 )
 
 func GetIndex(c *gin.Context) {
-	c.HTML(http.StatusOK, "index.html", gin.H{})
+	c.Redirect(http.StatusFound, "https://yunwanjia.me")
 }
